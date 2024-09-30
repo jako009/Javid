@@ -1,68 +1,139 @@
-let a = "Javid"
-console.log(typeof(a))
-let b = 42
-console.log(typeof(b))
-let c = true
-console.log(typeof(c))
-let d
-console.log(typeof(d))
-let e = null
-console.log(typeof(e))
-let f = Symbol("mekteb")
-console.log(typeof(f))
-let g = BigInt(5^9999999)
-console.log(typeof(g));
+console.log(12 * 8);
+let x = 0; // Başlangic deyer
+x += 10 / 2;
+console.log(x);
+let num1 = 20;
+let num2 = 17;
+console.log(num1 + num2);
+
+
+let name = 'Javid';
+let surname = 'Mammadov';
+let year = '2001';
+let info = `${'Javid'} ${'Mammadov'} ${'2001'}`;
+console.log(info);
+console.log(17 % 12);
+
+
+let cityName = 'Baku';
+cityName = 'Gence';
+console.log(cityName);
+
+console.log('test1', test); 
+{
+    let test = "something";
+    console.log('test2', test); 
+}
+console.log('test3', test);  
+
+console.log('test1', test); 
+{
+    var test = "something";
+    console.log('test2', test); 
+}
+console.log('test3', test); 
+
+let name = "Ulfat"; // string
+let surname = 'Zakirli'; // string
+let year = 2000; // number
+year = "2000"; // string
+let city; // undefined
+let qualification = null; // object
+let obj = { name: 'ulfat' }; // object
+let arr = ['a', 'b', 'c']; // object 
 
 
 
-let peach = 10 // let is the new way of declaring variables  
-
-const papa_johns = 50 // the const keyword was also introduced in the version to create constants/
-    // Once a constant is initialized, we cannot change its value 
-
-var watermelon = 20 // var is used in the older versions of javascript /
+const arr1 = [9, 1, 5, 8, 9, 9, 3, 22, 11, 12, 32, 8];
+const sum = arr1.reduce((acc, curr) => acc + curr, 0);
+console.log(sum);
 
 
-let firstname = "Andrew"
-let Lastname = "Loko"
-let age = 44
-let country = "Czech"
-let hobby = "playing Guitar"
-let occupationa = "none"
 
-console.log(`My name is ${firstname} and surname is ${Lastname}, My age is ${age} i live in ${country} my hobby is ${hobby} and my occupation at the moment is ${occupationa}`)
-    // console.log({ Firstname: `Andrew`, Lastname: `Loko`, age: 44, country: `Czech`, hobby: `playing guitar`, occupation: `None` })
+arr1.push(10, 88);
+console.log(arr1);
+
+arr1.splice(0, 2);
+console.log(arr1);
+
+
+arr1.unshift(0, 9, 11);
+console.log(arr1);
 
 
 
 
+arr1.splice(0, 4);
+console.log(arr1);
 
 
 
-let Address = 'Sumqayit'
-let num = 161
-
-console.log(`My address is ${Address} street, building number is ${num}.`)
-
-
-console.log(5 + 1, 5 - 3, 6 * 6, 18 / 2, 50 % 5)
-
-console.log(8===8 , 5 === '5') // true , false
-console.log( 7== '7', 7 == 5) // true , false 
-console.log(100 != 60) // true
-console.log(59 < 69, 55 < 44) //true , false
-console.log(6 !== 6, 4 !== '4') //false,true
-console.log(50 > 49, 15 > 10) // true ,false 
-console.log(10 >= 10, 8 >= 7) // true,true
-console.log(1<= 2, 69 <= 69) //false true
+const user = {
+    name: 'Ulfat',
+    surname: 'Zakirli',
+    age: 25,
+    city: 'Baku'
+};
 
 
 
-console.log(true && true) //true
-console.log(true && false) //false
 
-console.log(true || false) //true
 
-console.log(!true) //false
+user.name = 'Jhon';
+
+console.log(user);
+
+
+console.log(Object.keys(user));
+
+
+const mixedObject = {
+    name: "ulfat",
+    age: 25,
+    isStudent: false,
+    hobbies: null,
+    year: 2024,
+    address: undefined,
+    surname: 'Zakirli',
+    contactInfo: {
+        email: "ulfat@example.com",
+        phone: null
+    },
+    scores: [98, 87, 92],
+};
+
+for (const key in mixedObject) {
+    if (typeof mixedObject[key] === 'string') {
+        console.log(key);
+    }
+}
+
+for (const key in mixedObject) {
+    if (typeof mixedObject[key] === 'number') {
+        console.log(key);
+    }
+}
+
+
+for (const key in mixedObject) {
+    if (typeof mixedObject[key] === 'boolean') {
+        console.log(key);
+    }
+}
+
+
+for (const key in mixedObject) {
+    if (typeof mixedObject[key] === 'undefined') {
+        console.log(key);
+    }
+}
+
+
+
+for (const key in mixedObject) {
+    if (typeof mixedObject[key] === 'object' && mixedObject[key] !== null) {
+        console.log(key);
+    }
+}
 
 
